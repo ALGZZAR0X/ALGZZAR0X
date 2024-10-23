@@ -1,0 +1,13 @@
+.custom-bg {
+    background-color: #131313;
+    color: #666666;
+}
+
+footer .card {
+    border-radius: 0; 
+}
+
+footer .card-header,
+footer .card-footer {
+    border-radius: 0;
+}

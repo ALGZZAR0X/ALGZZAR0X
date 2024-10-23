@@ -1,0 +1,79 @@
+.navbar {
+  background-color: #131313 !important;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 10px 15px !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff8a65 !important;
+}
+
+.dropdown-menu {
+  background-color: #131313;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #ff8a65;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.nav-active-blog,
+.nav-active-home,
+.nav-active-gallery,
+.nav-active-destinations,
+.nav-active-contact,
+.nav-active-edit,
+.nav-acitve-favoutite {
+  color: #ff8a65 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #131313;
+  }
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}

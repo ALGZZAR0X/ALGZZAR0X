@@ -1,0 +1,104 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    border-radius: 12px;
+}
+
+.header {
+    position: relative;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.header p {
+    font-size: 24px;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.btn-color {
+    background-color: #FF8A65;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #d75d37cb;
+    color: white;
+}
+
+.custom-offset {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-color {
+    color: #FF8A65;
+}
+
+.flight-title {
+    position: relative;
+    display: inline-block;
+}
+
+.flight-title::after {
+    content: '';
+    position: absolute;
+    right: -210px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 200px;
+    background: linear-gradient(to right, gray 0%, transparent 100%);
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+}
+
+svg:hover {
+    fill: white;
+
+}
+
+.svg-circle {
+    background-color: rgba(236, 227, 227, 0.623);
+    border-radius: 50%;
+}
+
+.svg-circle:hover {
+    background-color: #FF8A65;
+}

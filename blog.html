@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link rel="icon" href="logo.jpg">
+    <title>Blog</title>
+    <link rel="icon" href="logo.jpg">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="home.html">
+  
+                <img src="https://theworldtravelguy.com/wp-content/uploads/2023/01/Logo_2.jpg" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active-blog" href="blog.html">BLOG</a>
+                    </li>
+
+                    <!-- -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            DESTINATIONS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">🌍 AMERICAS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsBrazil.html">Brazil</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsCanada.html">Canada</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsBelize.html">Belize</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">🌍 ASIA</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsJapan.html">Japan</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsUAE.html">United Arab Emirates</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsQatar.html">Qatar</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsOman.html">Oman</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsJordan.html">Jordan</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsLebanon.html">Lebanon</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">🌍 CARIBBEAN</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsBelize.html">Belize</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">🌍 EUROPE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsSpain.html">Spain</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsTurkey.html">Turkey</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsIceland.html">Iceland</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">🌍 MIDDLE EAST</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsEgypt.html">Egypt</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsUAE.html">United Arab Emirates</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsQatar.html">Qatar</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsOman.html">Oman</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsJordan.html">Jordan</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsLebanon.html">Lebanon</a></li>
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsTurkey.html">Turkey</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">🌍 OCEANIA</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Destinations/DestinationsNewzealand.html">New Zealand</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item">
+                                                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " href="favorite.html">FAVOURITE</a>
+                    </li>
+                    <li class="nav-item d-none" id="editBton">
+                        <a class="nav-link" href="edit.html">EDIT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <header>
+        <div class="header d-none d-md-flex">
+            <h1>BLOG</h1>
+            <p>Recent travel blog posts</p>
+        </div>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <p class="offset-2"><strong>PLOG POSTS</strong></p>
+        <hr class="border border-danger w-75 mx-auto">
+        <div id="blogPost" class="container">
+
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="001">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2024/09/DSCF7354-2.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Ternate Island Travel Guide & Best Things To Do (Maluku)</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">001</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/trenate-island10.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="002">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2024/09/DSCF2468.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Visit Ancient Corinth On A Day Trip From Athens</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">002</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Ancient-Corinth2.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+
+                <div class="col-12 col-md-4 p-3" id="003">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2024/09/DSCF9657-2.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Visit Khao Sok National Park In Thailand</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">003</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Khao-Sok-National-Park3.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="004">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2024/08/DSCF8916.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Spend 1 Day In Yosemite National Park (Itinerary)</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">004</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Yosemite-National-Park4.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="005">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2024/04/DJI_0714.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Fulidhoo Island Guide: Shark & Stingray Beach In Maldives</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">005</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Waterfall-Valley5.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="006">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2021/04/DSCF8052.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Mount Bromo Volcano Sunrise In Indonesia (Travel Guide)</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">006</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Mount-Rushmore6.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="007">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2019/06/DSCF6552-2n.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Angkor Wat Travel Guide For Cambodia</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">007</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Angkor-Wat7.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="008">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2018/12/DSCF2348.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">10-Day Bali Itinerary & Nusa Penida Highlights</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">008</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Bali-Itinerary8.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="009">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/09/DSCF5763.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Antelope Canyon X Tour Review, Photos & Experience</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">009</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Antelope-Canyon-Tours9.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="010">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/10/DSCF3670-2.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Visit The Vietnam Incense Village (Quang Phu Cau)</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">010</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/trenate-island10.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="011">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2018/11/IMG_0702.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Visit Himeji Castle On A Day Trip From Osaka & Kyoto</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">011</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Himeji-Castle11.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="012">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/09/DSCF0595.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Palau Scenic Flight Over The Rock Islands: How To Do It</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">012</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Palau-Scenic12.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="013">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2020/04/DSCF5510.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">9 Must See Temples In Kyoto Japan</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">013</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Traditional-Shrines13.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="014">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/09/DSCF0624-3.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Rock Islands Palau Boat Tour: Milky Way & Long Beach</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">014</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Tiger’s-Nest14.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="015">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2020/10/DSCF5873-2.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">25 Most Beautiful Beaches In Indonesia</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">015</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Tanjung-Puting15.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="016">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/08/DSCF9483.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Hike Half Dome In Yosemite National Park</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">016</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Shark-Stingray-Beach16.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="017">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/08/DSCF7551.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">16 Best Slot Canyons Near Las Vegas Nevada</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">017</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Antelope-Canyon17.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="018">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2019/08/DSCF2251.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Kelingking Beach Nusa Penida: T-Rex Cliff Hike In Bali</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">018</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Seram-Island18.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="019">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/07/DSCF3112.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Lamanai Ruins: The Mayan Mask Temple Of Belize</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">019</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Samet-Nangshe19.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="020">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2020/08/DSCF8339.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Jiufen Taiwan: Spirited Away From Taipei To Shifen Old Street</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">020</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Maya-Bay20.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="021">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2021/12/DSCF2075-2.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">18 Best Slot Canyons In Utah The Hidden Gems!</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">021</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Lower-Antelope21.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="022">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2018/12/DSCF8868.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Playing With Bali Monkeys At The Ubud Monkey Forest Sanctuary</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">022</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Labengki-Island22.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="023">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/07/DSCF3471-2.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Copan Ruinas: How To Visit The Mayan Ruins In Honduras</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">023</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Incense-Village23.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="024">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2021/03/DSCF1402.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Visit The Pink Beach In Komodo Island, Indonesia</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">024</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Dhigurah-Island24.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="025">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/07/DSCF3621-2.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Santa Ana Volcano Hike In El Salvador (Ilamatepec)</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">025</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Coron-vs-ElNido25.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="026">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2020/06/DSCF4295.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">31 Best Bali Temples & Shrines To Visit (+Map)</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">026</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Sanur-Bali26.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="027">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2023/05/IMG_2838_1000.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Flying Over The Great Blue Hole In Belize: How To Do It</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">027</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Bhutan-Travel27.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-3" id="028">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2019/10/DSCF6023.jpg" alt="Image 1"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Wadi Rum Desert: Epic Jeep Tour In Jordan</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">028</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>Ternate is a small, cone-shaped volcanic island...</p>
+                    <a href="readmore_content_for_blog/Banggai-Islands28.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="029">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2020/11/DSCF7073.jpg" alt="Image 2"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">Bayan Ancient Tree In Bali: The Kayu Putih Giant Tree</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">029</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>The historic ruin of Ancient Corinth is one of the best...</p>
+                    <a href="readmore_content_for_blog/Aruba29.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+                <div class="col-12 col-md-4 p-3" id="030">
+                    <img src="https://theworldtravelguy.com/wp-content/uploads/2019/09/DSCF3947.jpg" alt="Image 3"
+                        class="img-fluid">
+                    <h5 class="text-center p-2">How To Visit The Pyramids Of Giza & Sphinx In Egypt</h5>
+                    <p class="text-center text-muted admin-post-id d-none" style="font-size: 0.9rem;">Post ID: <span
+                            id="postId">030</span>
+                    </p>
+                    <hr class="border border-danger w-25 mx-auto">
+                    <p>One of the best places to see nature and animals...</p>
+                    <a href="readmore_content_for_blog/Arizona-Slot30.html" class="btn btn-color p-2 custom-offset custom-btn"><strong>READ MORE</strong></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="card text-center custom-bg">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">© The World Travel Guy 2024</h5>
+                <p class="card-text">Affiliate Disclosures • Privacy Policy • Terms Of Use</p>
+            </div>
+            <div class="card-footer">
+                Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of
+                these links, I get a small commission at no extra cost to you. As an affiliate, I only recommend
+                products and services that I feel are high quality and helpful to my readers. Thanks for your support.
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/editBtnScript.js"></script>
+    <script src="./js/postsIdForDeleting.js"></script>
+    <script src="./js/postIdForAdmin.js"></script>
+</body>
+
+</html>

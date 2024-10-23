@@ -1,0 +1,176 @@
+p.h5 {
+  line-height: 35px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.our-border-radius {
+  border-radius: 15px;
+}
+
+.image-overlay {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay .text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.toc {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+.toc a {
+  color: #ff6a4d;
+  text-decoration: none;
+}
+.toc a:hover {
+  text-decoration: underline;
+}
+.toc-toggle {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+.custom-bg {
+  background-color: #131313;
+  color: #666666;
+}
+
+footer .card {
+  border-radius: 0; /* إلغاء الحواف المدورة للبطاقة */
+}
+
+footer .card-header,
+footer .card-footer {
+  border-radius: 0; /* إلغاء الحواف المدورة للعناوين والتذييل */
+}
+.navbar {
+  background-color: #131313 !important;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 10px 15px !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff8a65 !important;
+}
+
+.dropdown-menu {
+  background-color: #131313;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #ff8a65;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.nav-active-blog,
+.nav-active-home,
+.nav-active-gallery,
+.nav-hover-destinations {
+  color: #ff8a65 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #131313;
+  }
+}
+.footer {
+  position: relative; /* جعل الموضع نسبي لتحديد المكان بدقة */
+  background-image: url("https://theworldtravelguy.com/wp-content/uploads/2022/10/DSCF0524_gal1.jpg"); /* استبدل الرابط بصورة التذييل */
+  background-size: cover; /* لجعل الصورة تغطي مساحة التذييل بالكامل */
+  background-position: center center; /* لمحاذاة الصورة في منتصف التذييل */
+  background-repeat: no-repeat;
+  height: 400px; /* ارتفاع التذييل */
+  width: 100%;
+  color: white; /* لون النص */
+  display: flex; /* استخدام flexbox لتوسيع المحتوى */
+  justify-content: center; /* محاذاة المحتوى في المنتصف */
+  align-items: center; /* محاذاة العمود في المنتصف */
+  text-align: center;
+  padding: 20px; /* يمكنك تعديل هذه القيمة أو إزالتها حسب رغبتك */
+  border-top-left-radius: 20px; /* حواف دائرية في الزاوية اليسرى العلوية */
+  border-top-right-radius: 20px; /* حواف دائرية في الزاوية اليمنى العلوية */
+  box-sizing: border-box;
+  overflow: hidden; /* لإخفاء أي محتوى خارج الحواف */
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+.footer::before {
+  content: ""; /* إضافة عنصر وهمي */
+  position: absolute; /* موضع مطلق بالنسبة للتذييل */
+  top: 0; /* محاذاة لأعلى */
+  left: 0; /* محاذاة لليسار */
+  right: 0; /* محاذاة لليمين */
+  height: 70px; /* ارتفاع التدرج العلوي */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  ); /* تدرج لوني من الأبيض الغامق إلى الفاتح */
+  border-top-left-radius: 20px; /* نفس الانحناء العلوي */
+  border-top-right-radius: 20px; /* نفس الانحناء العلوي */
+  z-index: 1; /* التأكد من ظهور التدرج فوق الصورة */
+}
+.footer p {
+  position: relative; /* لجعل النص فوق التدرج */
+  z-index: 2; /* تأكد من أن النص يظهر فوق التدرج */
+}
+
+/* للشاشات المتوسطة والصغيرة */
+@media (max-width: 768px) {
+  .footer {
+    height: 400px; /* زيادة الارتفاع للشاشات المتوسطة */
+    padding: 15px;
+  }
+}
+
+/* للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+  .footer {
+    height: 500px; /* زيادة الارتفاع للشاشات الصغيرة */
+    padding: 10px;
+  }
+}

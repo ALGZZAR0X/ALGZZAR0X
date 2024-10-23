@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.background-clip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  top: 200px;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 4rem;
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content a {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 10px 12px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+.content a:hover {
+  background-color: #ff8a65;
+  color: #ffffff;
+}
+
+.featured-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.featured-logos img {
+  max-height: 30px;
+  margin: 10px 20px;
+}
+
+.main-content {
+  padding: 50px 0;
+}
+
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.featured-section .container h2 {
+  position: relative;
+  font-weight: 600;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.949);
+}
+
+.featured-section .container h2::before,
+.featured-section .container h2::after {
+  content: none;
+}
+
+@media (min-width: 1400px) {
+
+  .featured-section .container h2::before,
+  .featured-section .container h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 250px;
+    height: 2px;
+    background-color: darkgray;
+  }
+
+  .featured-section .container h2::before {
+    left: 200px;
+  }
+
+  .featured-section .container h2::after {
+    right: 200px;
+  }
+}
+
+.featured-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.featured-logos img {
+  width: 70px;
+  height: auto;
+}
+
+.featured-logos img:hover {
+  opacity: 0.7;
+}
+
+.featured-logos .specialimg {
+  width: 140px;
+}
+
+.card-font {
+  font-family: "Philosopher", Sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.subscribe-section {
+  padding: 15px 0px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(1, 80%);
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+}
+
+.linkNext {
+  color: #313131;
+}
+
+.parent i {
+  color: #313131;
+}
+
+.linkNext:hover {
+  background-color: #ff8a65;
+  color: #f8f9fa;
+}
+
+.parent i:hover {
+  color: #f8f9fa;
+}
+
+.btn-color {
+  background-color: #FF8A65;
+  color: white;
+}
+
+.custom-btn:hover {
+  background-color: #d75d37cb;
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.card-font {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #313131;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(27, 27, 27, 0.9);
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured-logos img {
+    max-height: 25px;
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}

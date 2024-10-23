@@ -1,0 +1,181 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Image */
+.header-image {
+    position: relative;
+    height: 60vh;
+    background: url('https://theworldtravelguy.com/wp-content/uploads/2023/09/DSCF0603_gal1.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-image h1 {
+    color: white;
+    text-align: center;
+    padding-top: 15vh;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #ff8a65;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+}
+
+/* Form animation */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+    background-color: white;
+    position: relative;
+}
+
+/* Hover effect to move the form */
+.contact-form:hover {
+    transform: translateY(-10px); 
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    color: #ff8a65; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.form-control::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #888;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #ff8a65; 
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition for hover effects */
+}
+
+.btn-primary:hover {
+    background-color: #b84b24; 
+    transform: scale(1.05);
+}
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.faq h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: #ff8a65;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+}
+
+.faq-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Moving Box */
+.moving-box {
+    width: 50px;
+    height: 50px;
+    background-color: #ff8a65;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.moving-box:hover {
+    transform: translateY(-10px);
+}
+
+
+.contact-form:hover {
+    transform: translateY(-5px);
+}
